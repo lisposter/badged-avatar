@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Red spoted avatar</title>
+        <style>
+            body {
+                background: #f8f8f8;
+                font-family: sans-serif;
+            }
+            h1 {
+                color: #7e96c1;
+                text-align: center;
+            }
+            canvas {
+                display: block;
+                width: 640px;
+                height: 640px;
+                margin: 20px auto;
+                border: 2px dashed #000;
+            }
+            label {
+                display: block;
+                text-align: center;
+                font-size: 20px;
+            }
+            input {
+                display: block;
+                margin: 20px auto;
+                width: 400px;
+                height: 100px;
+                font-size: 90px;
+                line-height: 100px;
+                text-align: center;
+                color: #02a3c6;
+            }
+            p {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            footer,
+            footer a {
+                color: #aaa; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Red spoted avatar</h1>
+        <label for="countNum">type the number you want</label><input id="countNum" type="text" value="1"/>
+        <hr>
+        <p>and... drag your square avatar into the canvas..</p>
+        <canvas id="canvas" width="640" height="640"></canvas>
+        <p>right click the canvas, "save as.."  BOOOOOM! It's done!</p>
+        <footer>
+            &copy; <a href="http://zhu.li">Leigh</a>
+        </footer>
+    </body>
+    <script src="avatar.js"></script>
+</body>
+</html>
