@@ -14,7 +14,7 @@ function loadFile(e) {
     img.onload = function() {
         ctx.save();
 
-        roundedImage(ctx, 0, 640 - 576, 576, 576, 13);
+        roundedImage(ctx, 0, 640 - 576, 576, 576, 26);
         ctx.clip();
         ctx.drawImage(img, 0, 640 - 576, 576, 576);
         
