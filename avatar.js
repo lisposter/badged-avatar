@@ -3,9 +3,9 @@ function loadFile(e) {
 
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, 640, 640);
 
     var countNumIpt = document.getElementById("countNum");
+    var downloadLink = document.getElementById("download");
 
     var original = e.dataTransfer.files[0];
 
@@ -34,6 +34,9 @@ function loadFile(e) {
         var countNum = parseInt(countNumIpt.value);
         var number = (countNum && typeof countNum === 'number') ? (countNum > 99 ? '99+' : countNum) : 1;
         ctx.fillText(number, x, y + y / 3);
+
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.download = 'avatar.png';
     };
 }
 
